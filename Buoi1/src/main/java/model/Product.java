@@ -10,12 +10,12 @@ import lombok.Setter;
 @Setter
 @Getter
 public class Product {
-    private int id;
     private String name;
+    private int quantity;
     private double price;
 
     @Override
     public String toString() {
-        return "Product{id=" + id + ", name='" + name + "', price=" + price + "}";
+        return "Product{name='" + name + "',quantity= " + quantity + " ,price=" + price + "}";
     }
 }
